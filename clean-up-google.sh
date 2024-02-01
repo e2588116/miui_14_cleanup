@@ -18,6 +18,8 @@ adb shell pm uninstall --user 0 com.google.android.projection.gearhead
 
 echo -n "Google YouTube... "
 adb shell pm uninstall --user 0 com.google.android.youtube
+adb shell pm uninstall --user 0 com.google.android.apps.youtube.music
+
 
 echo -n "Google Chrome... "
 adb shell pm uninstall --user 0 com.android.chrome

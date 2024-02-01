@@ -50,6 +50,8 @@ echo -n "Mi Coin... "
 adb shell pm uninstall --user 0 com.xiaomi.payment
 echo -n "MIUI Community... "
 adb shell pm uninstall --user 0 com.mi.global.bbs
+echo -n "MIUI Browser... "
+adb shell pm uninstall --user 0 com.mi.globalbrowser
 
 adb shell pm uninstall --user 0 com.mi.globalminusscreen
 adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer 
@@ -68,6 +70,8 @@ adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase
 adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 adb shell pm uninstall --user 0 com.miui.fm
 adb shell pm uninstall --user 0 com.miui.fmservice| MIUI FM Module
+adb shell pm uninstall --user 0 com.miui.hybrid
+adb shell pm uninstall --user 0 com.miui.systemAdSolution
 
 # System bloatware
 #echo -n "SIM Menu..."
@@ -104,7 +108,7 @@ for app in com.miui.analytics com.android.providers.downloads.ui \
     com.miui.miservice \
     com.miui.cloudbackup \
     com.miui.cloudservice\
-    com.xiaomi.calendar
+    com.xiaomi.calendar \
 do
     echo "Disabling ${app}"
     adb shell pm disable-user --user 0 "${app}"
