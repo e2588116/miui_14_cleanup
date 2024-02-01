@@ -67,11 +67,47 @@ adb shell pm uninstall --user 0 com.miui.cleanmaster
 adb shell pm uninstall --user 0 com.miui.cloudbackup
 adb shell pm uninstall --user 0 com.miui.cloudservice
 adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase
+adb shell pm uninstall --user 0 com.miui.micloudsync
+
 adb shell pm uninstall --user 0 com.mi.android.globalFileexplorer
 adb shell pm uninstall --user 0 com.miui.fm
 adb shell pm uninstall --user 0 com.miui.fmservice| MIUI FM Module
 adb shell pm uninstall --user 0 com.miui.hybrid
 adb shell pm uninstall --user 0 com.miui.systemAdSolution
+adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase
+adb shell pm uninstall --user 0 com.milink.service
+adb shell pm uninstall --user 0 com.miui.analytics
+adb shell pm uninstall --user 0 com.miui.audioeffect
+adb shell pm uninstall --user 0 com.miui.audiomonitor
+adb shell pm uninstall --user 0 com.miui.bugreport
+adb shell pm uninstall --user 0 com.miui.cit
+adb shell pm uninstall --user 0 com.miui.cloudbackup
+adb shell pm uninstall --user 0 com.miui.cloudservice
+adb shell pm uninstall --user 0 com.miui.cloudservice.sysbase
+adb shell pm uninstall --user 0 com.miui.contentcatcher
+adb shell pm uninstall --user 0 com.miui.daemon
+adb shell pm uninstall --user 0 com.miui.hybrid
+adb shell pm uninstall --user 0 com.miui.hybrid.accessory
+adb shell pm uninstall --user 0 com.miui.maintenancemode
+adb shell pm uninstall --user 0 com.miui.micloudsync
+adb shell pm uninstall --user 0 com.miui.miservice
+adb shell pm uninstall --user 0 com.miui.mishare.connectivity
+adb shell pm uninstall --user 0 com.miui.misound
+adb shell pm uninstall --user 0 com.miui.nextpay
+adb shell pm uninstall --user 0 com.miui.personalassistant
+adb shell pm uninstall --user 0 com.miui.phrase
+adb shell pm uninstall --user 0 com.miui.smsextra
+adb shell pm uninstall --user 0 com.miui.systemAdSolution
+adb shell pm uninstall --user 0 com.miui.touchassistant
+adb shell pm uninstall --user 0 com.miui.translation.kingsoft
+adb shell pm uninstall --user 0 com.miui.translation.xmcloud
+adb shell pm uninstall --user 0 com.miui.translation.youdao
+adb shell pm uninstall --user 0 com.miui.translationservice
+adb shell pm uninstall --user 0 com.miui.voiceassist
+adb shell pm uninstall --user 0 com.miui.voicetrigger
+adb shell pm uninstall --user 0 com.miui.vsimcore
+adb shell pm uninstall --user 0 com.miui.wmsvc
+adb shell pm uninstall --user 0 com.mobiletools.systemhelper
 
 # System bloatware
 #echo -n "SIM Menu..."
@@ -108,7 +144,7 @@ for app in com.miui.analytics com.android.providers.downloads.ui \
     com.miui.miservice \
     com.miui.cloudbackup \
     com.miui.cloudservice\
-    com.xiaomi.calendar \
+    com.xiaomi.calendar 
 do
     echo "Disabling ${app}"
     adb shell pm disable-user --user 0 "${app}"
